@@ -1,8 +1,29 @@
 {
+  // Jupyter Notebook Preview Configuration
+    "python.insidersChannel": "weekly",
+    "python.pythonPath": "/usr/local/Caskroom/miniconda/base/bin/python",
+    "window.zoomLevel": 0,
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "terminal.integrated.fontSize": 12,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
+    "python.dataScience.askForKernelRestart": false,
+    "python.experiments.optInto": [
+		"NativeNotebook - experiment"
+  ],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter-notebook",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "python.dataScience.alwaysTrustNotebooks": true,
+  "terminal.integrated.macOptionIsMeta": true,
+// End of Section
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
-  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/vscodium_init.vim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/vscodium_init.vim",
   "whichkey.sortOrder": "alphabetically",
   "whichkey.bindings": [
     {
@@ -875,7 +896,6 @@
   "gitlens.hovers.currentLine.over": "line",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.pythonPath": "/Users/chris/.miniconda/bin/python",
   "java.semanticHighlighting.enabled": true,
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/chris/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   "workbench.list.automaticKeyboardNavigation": false,
@@ -900,12 +920,9 @@
   "leetcode.defaultLanguage": "javascript",
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.commentDescription": false,
-  "window.zoomLevel": 3,
   "window.menuBarVisibility": "toggle",
-  "python.dataScience.alwaysTrustNotebooks": true,
-  "python.condaPath": "$HOME/.miniconda/bin/conda",
+  "python.condaPath": "/opt/anaconda/condabin/conda",
   "python.formatting.provider": "black",
-  "python.insidersChannel": "daily",
   "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.external.linuxExec": "/usr/bin/alacritty",
   "editor.tokenColorCustomizations": {
