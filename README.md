@@ -1,7 +1,7 @@
 # VSCodium & Neovim
 
 Reference:  
-[Blog](https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/)
+[Blog](https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/)  
 [Github](https://github.com/ChristianChiarulli/nvim)
 
 ## Installation
