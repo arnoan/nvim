@@ -61,11 +61,6 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "shit+tab",
-    "command": "selectPrevSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-  },
-  {
     "key": "shift+tab",
     "command": "selectPrevSuggestion",
     "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
@@ -135,6 +130,7 @@
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !inputFocus"
   },
+  // More
   {
     "key": "shift+;",
     "command": "insertPrevSuggestion",
@@ -197,7 +193,9 @@
     "key": "shift+delete",
     "command": "-deleteFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-  }
+  },
+
+  // Exit insert mode with "jk"
   {
     "command": "vscode-neovim.compositeEscape1",
     "key": "j",
