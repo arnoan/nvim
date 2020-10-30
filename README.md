@@ -1,24 +1,39 @@
 # VSCodium & Neovim
 
 Reference:
-(Blog)[https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/]
-(Github)[https://github.com/ChristianChiarulli/nvim]
+[https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/](Blog)
+[https://github.com/ChristianChiarulli/nvim](Github)
 
 ## Installation
 
-Install VSCodium
+### Install Neovim (0.5)
+### Install VSCodium
 
-Install Neovim (0.5)
+### Add the following to `product.json` to enable VSCode extensions:
+(Path: ‎⁨macOS Mojave⁩ ▸ ⁨Applications⁩ ▸ ⁨VSCodium⁩ ▸ ⁨Contents⁩ ▸ ⁨Resources⁩ ▸ ⁨app⁩)
 
-Install plugins
+```json
+"extensionsGallery": {
+    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    "itemUrl": "https://marketplace.visualstudio.com/items"
+}
+```
+
+### Install Extensions
 - Neovim
 - Whichkey
 - Python
 
-- AuzureML
+- Cobalt2 Theme
 - Gitlens
+- Remote - SSH
+- AuzureML
 
-Adjust configuration files:
+### Adjust configuration files:
 General/which-key settings: settings.json
 Keybindings: keybindings.json
 Neovim settings: vscodium_init.vim
+
+Acess from VSCodium via Command Palette.
+Point NeoVim extension to init.vim path.
+Default: ```"$HOME/.config/nvim/vscodium_init.vim"```
