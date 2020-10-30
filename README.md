@@ -37,3 +37,11 @@ Neovim settings: vscodium_init.vim
 Acess from VSCodium via Command Palette.
 Point NeoVim extension to init.vim path.
 Default: ```"$HOME/.config/nvim/vscodium_init.vim"```
+
+
+### To update this repo if settings change
+- clone repo
+- delete contained .json settings (since they have different inode)
+- create hard links again
+    - `ln /Users/arno/Library/Application\ Support/Code\ -\ Insiders/User/keybindings.json . && ln /Users/arno/Library/Application\ Support/Code\ -\ Insiders/User/settings.json .`
+- That way new changes in VSCode settings are reflected in repo folder
