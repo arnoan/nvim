@@ -1,23 +1,17 @@
 # VSCodium & Neovim
 
-Reference:  
+References:  
 [Blog](https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/)  
-[Github](https://github.com/ChristianChiarulli/nvim)
+[Video Demonstration](https://www.youtube.com/watch?v=g4dXZ0RQWdw)  
+[Github](https://github.com/ChristianChiarulli/nvim)  
+
+
+[Youtube VSCode Tutorial](https://www.youtube.com/watch?v=WPqXP_kLzpo)
 
 ## Installation
 
 ### Install Neovim (0.5)
-### Install VSCodium
-
-### Add the following to `product.json` to enable VSCode extensions:
-(Path: ‎⁨macOS Mojave⁩ ▸ ⁨Applications⁩ ▸ ⁨VSCodium⁩ ▸ ⁨Contents⁩ ▸ ⁨Resources⁩ ▸ ⁨app⁩)
-
-```json
-"extensionsGallery": {
-    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
-    "itemUrl": "https://marketplace.visualstudio.com/items"
-}
-```
+### Install VSCode Insiders Edition
 
 ### Install Extensions
 - Neovim
@@ -34,14 +28,16 @@ General/which-key settings: settings.json
 Keybindings: keybindings.json
 Neovim settings: vscodium_init.vim
 
-Acess from VSCodium via Command Palette.
-Point NeoVim extension to init.vim path.
-Default: ```"$HOME/.config/nvim/vscodium_init.vim"```
+Configure Neovim Extenion
+- Path to neovim 0.5 binary 
+- Path to neovim configuration: `"$HOME/.config/nvim/neovim_vscode_init.vim"```
 
 
-### To update this repo if settings change
-- clone repo
+### To update this repo if VSCode settings change
+- clone this repo
 - delete contained .json settings (since they have different inode)
+    - `cd nvim/vscode_config/`
+    - `rm keybindings.json settings.json`
 - create hard links again
     - `ln /Users/arno/Library/Application\ Support/Code\ -\ Insiders/User/keybindings.json . && ln /Users/arno/Library/Application\ Support/Code\ -\ Insiders/User/settings.json .`
-- That way new changes in VSCode settings are reflected in repo folder
+- Now changes in VSCode settings are automatically reflected in repo folder
