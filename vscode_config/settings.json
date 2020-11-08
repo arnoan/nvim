@@ -31,7 +31,7 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.showTabs": true,
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "editor.suggestSelection": "first",
   "editor.cursorBlinking": "solid",
   "editor.minimap.enabled": false,

@@ -136,6 +136,7 @@
       "command": "insertPrevSuggestion",
       "when": "hasOtherSuggestions && textInputFocus && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
     },
+    // Alt-h,j,k,l for window navigation (not Ctrl-hjkl to preserver command line functionality)
     {
       "key": "ctrl+l",
       "when": "sideBarFocus",
@@ -172,7 +173,7 @@
     {
       "key": "shift+k",
       "command": "editor.action.showHover",
-      "when": "editorTextFocus"
+      "when": "editorTextFocus && neovim.mode != 'insert'"
     },
     {
       "key": "ctrl+k ctrl+i",
@@ -193,6 +194,32 @@
       "key": "shift+delete",
       "command": "-deleteFile",
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+      "key": "shift+escape",
+      "command": "notebook.cell.quitEdit",
+      "when": "inputFocus && notebookEditorFocused && !editorHasSelection && !editorHoverVisible"
+    },
+    {
+      "key": "escape",
+      "command": "-notebook.cell.quitEdit",
+      "when": "inputFocus && notebookEditorFocused && !editorHasSelection && !editorHoverVisible"
+    },
+    {
+      "key": "ctrl+shift+l",
+      "command": "workbench.action.increaseViewSize"
+    },
+    {
+      "key": "ctrl+shift+h",
+      "command": "workbench.action.decreaseViewSize"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "workbench.action.toggleMaximizedPanel"
     },
 
     // Exit insert mode with "jk"
