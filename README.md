@@ -30,7 +30,7 @@ Neovim settings: vscodium_init.vim
 
 Configure Neovim Extenion
 - Path to neovim 0.5 binary 
-- Path to neovim configuration: `"$HOME/.config/nvim/neovim_vscode_init.vim"```
+- Path to neovim configuration: `"$HOME/.config/nvim/neovim_vscode_init.vim"`
 
 
 ### To update this repo if VSCode settings change
