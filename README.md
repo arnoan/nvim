@@ -24,9 +24,9 @@ References:
 - AuzureML
 
 ### Adjust configuration files:
-General/which-key settings: settings.json
-Keybindings: keybindings.json
-Neovim settings: vscodium_init.vim
+General/which-key settings: settings.json  
+Keybindings: keybindings.json  
+Neovim settings: vscodium_init.vim  
 
 Configure Neovim Extenion
 - Path to neovim 0.5 binary 
