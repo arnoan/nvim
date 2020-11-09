@@ -32,6 +32,8 @@ Configure Neovim Extenion
 - Path to neovim 0.5 binary 
 - Path to neovim configuration: `"$HOME/.config/nvim/neovim_vscode_init.vim"`
 
+### Key remappings
+The key remapping (CAPSLOCK -> ESC+CTRL) configuration files for karabiner (macOS) or autohotkey (Windows) are [in my .dotfiles repository](https://github.com/arnoan/.dotfiles/tree/vscode_neovim/.config). 
 
 ### To update this repo if VSCode settings change
 - clone this repo
