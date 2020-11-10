@@ -239,5 +239,26 @@
       "key": "k",
       "when": "neovim.mode == insert && editorTextFocus",
       "args": "k"
+  },
+  // Enable CTRL-K in terminal
+  {
+    "key": "ctrl+k",
+    "command": "deleteAllRight",
+    "when": "terminalFocus"
+  },
+  { "key": "ctrl+alt+f", "command": "-workbench.action.terminal.focusFindWidget",
+    "when": "terminalFocus"
+  },
+  // Enable CTRL-F in terminal (Use CTRL-SHIFT-F for search in terminal)
+  {
+    "key": "shift+alt+f",
+    "command": "workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
   }
+    
   ]
